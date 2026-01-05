@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Локальный мессенджер</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Локальный мессенджер</h1>
+    
+    <div id="messages"></div>
+    
+    <div class="input-area">
+      <input type="text" id="messageInput" placeholder="Введите сообщение...">
+      <button id="sendBtn">Отправить</button>
+      
+      <label class="file-label">
+        <input type="file" id="fileInput" style="display: none;">
+        Прикрепить файл
+      </label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
